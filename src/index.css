@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #232c42;
+}
+
+.search {
+  width: 33%;
+  float: inline-end;
+  margin-right: 100px;
+  /* width: 71%;
+  margin: 4rem 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem 1.75rem;
+  border-radius: 3rem;
+  background: #1f2123; */
+  /* -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527; */
+}
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #f9d3b4;
+  font-family: var(--font-raleway);
+}
+
+ul > li a {
+  /* color: #b34c4c; */
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ul > li a:hover {
+  color: #dadada;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+.fa-rating {
+  color: goldenrod;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+p {
+  color: #ebe2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.movie-poster {
+  width: 40%;
+}
+
+h1 {
+  color: gold;
+}
+
+h2 {
+  color: #dadada;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: gold;
+}
+
+/* .movie-title {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 60%;
+}
+
+.movie-title h1 {
+  font-size: 2.5rem;
+  color: #ebe2e2;
+  text-align: center;
+  color: gold;
+}
+
+.movie-title h2 {
+  font-size: 1.5rem;
+  color: azure;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.movie-title h3 {
+  font-size: 1rem;
+  color: #ebe2e2;
+  text-align: center;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+} */
+
+.wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.jss38 {
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  padding: 0;
+}
+
+/* chat gpt */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* grow, shrink, basis */
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.icon {
+  padding-left: 20px;
+  /* background: url("https://static.thenounproject.com/png/101791-200.png")
+    no-repeat left; */
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/014/441/308/small_2x/magnifying-glass-icon-3d-design-for-application-and-website-presentation-png.png")
+    no-repeat right;
+  background-size: 20px;
+}
+
+input {
+  background-color: #2f3850 !important;
+  padding-right: 10px !important;
+}
+@media (max-width: 1200px) {
+  .container > .item > h1 {
+    display: none;
+  }
+  .item {
+    flex-basis: calc(50% - 20px); /* Adjust accordingly for margins */
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.75rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .item {
+    flex-basis: calc(100% - 20px); /* Adjust accordingly for margins */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    border: solid 1px #1f2937;
+    margin-right: 64px;
+    padding-top: 20px;
+    background-color: #1f2937;
+    margin-bottom: 10px;
+  }
+}
