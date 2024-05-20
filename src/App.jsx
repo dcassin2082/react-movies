@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Sidebar from "./components/Sidebar";
+import Sidebar2 from "./components/Sidebar2";
 import Dashboard from "./components/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import MovieList from "./components/MovieList";
@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div className="flex">
-      <Sidebar sidebarToggle={sidebarToggle} />
+      <Sidebar2 sidebarToggle={sidebarToggle} />
       <Dashboard
         sidebarToggle={sidebarToggle}
         setSidebarToggle={setSidebarToggle}
